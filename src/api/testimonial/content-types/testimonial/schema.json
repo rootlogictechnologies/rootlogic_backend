@@ -22,9 +22,13 @@
       "type": "string"
     },
     "media": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::media.media"
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

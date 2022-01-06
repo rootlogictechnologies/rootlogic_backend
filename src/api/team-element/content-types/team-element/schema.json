@@ -18,31 +18,6 @@
     "description": {
       "type": "text"
     },
-    "media": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::media.media"
-    },
-    "partners": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::team-element.team-element"
-    },
-    "members": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::team-element.team-element"
-    },
-    "teamDrives": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::team-element.team-element"
-    },
-    "teamValues": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::team-element.team-element"
-    },
     "memberType": {
       "type": "enumeration",
       "enum": [
@@ -50,10 +25,26 @@
         "Mentor"
       ]
     },
-    "teamDNA": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::team-element.team-element"
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Partners",
+        "Members",
+        "Drives",
+        "Values",
+        "DNA"
+      ],
+      "required": true,
+      "default": "Drives"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

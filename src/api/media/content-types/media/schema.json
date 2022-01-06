@@ -22,7 +22,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::section-data.section-data",
-      "inversedBy": "media"
+      "mappedBy": "media"
     },
     "imageUrl": {
       "type": "string"

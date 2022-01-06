@@ -18,9 +18,6 @@
     "subHeading": {
       "type": "string"
     },
-    "page": {
-      "type": "string"
-    },
     "description": {
       "type": "richtext"
     },
@@ -69,6 +66,17 @@
       "relation": "manyToMany",
       "target": "api::media.media",
       "inversedBy": "sectionData"
+    },
+    "page": {
+      "type": "enumeration",
+      "enum": [
+        "HomePage",
+        "AboutUs",
+        "Services",
+        "Careers",
+        "Contact"
+      ],
+      "required": true
     }
   }
 }
