@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_datas",
+  "info": {
+    "singularName": "section-data",
+    "pluralName": "section-datas",
+    "displayName": "sectionData",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroHeading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "buttonText": {
+      "type": "json"
+    },
+    "solutions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::solution.solution",
+      "inversedBy": "section_data"
+    },
+    "meta_data": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::meta-data.meta-data",
+      "inversedBy": "section_data"
+    },
+    "jobOpenings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-opening.job-opening"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "teamElements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-element.team-element"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "clients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    },
+    "media": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::media.media",
+      "inversedBy": "sectionData"
+    }
+  }
+}

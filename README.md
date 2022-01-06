@@ -1,2 +1,3 @@
-# rootlogic_backend
-Website BackEnd Repo
+# Strapi application
+
+A quick description of your strapi application

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_openings",
+  "info": {
+    "singularName": "job-opening",
+    "pluralName": "job-openings",
+    "displayName": "jobOpening",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "minYearGap": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Internship",
+        "FullTime"
+      ],
+      "default": "FullTime",
+      "required": true
+    },
+    "location": {
+      "type": "json"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "archive": {
+      "type": "boolean",
+      "default": false
+    },
+    "applicants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::applicant.applicant",
+      "inversedBy": "jobOpenings"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solutionss",
+  "info": {
+    "singularName": "solution",
+    "pluralName": "solutionss",
+    "displayName": "solution"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "media": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::media.media",
+      "mappedBy": "solutions"
+    },
+    "section_data": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::section-data.section-data",
+      "mappedBy": "solutions"
+    },
+    "meta_data": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::meta-data.meta-data",
+      "inversedBy": "solution_data"
+    }
+  }
+}
