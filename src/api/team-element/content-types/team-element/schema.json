@@ -32,19 +32,21 @@
         "Members",
         "Drives",
         "Values",
-        "DNA"
+        "DNA",
+        "WhyUs"
       ],
       "required": true,
       "default": "Drives"
     },
     "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -18,12 +18,6 @@
     "altText": {
       "type": "string"
     },
-    "sectionData": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::section-data.section-data",
-      "mappedBy": "media"
-    },
     "imageUrl": {
       "type": "string"
     },
@@ -38,12 +32,6 @@
       "relation": "manyToMany",
       "target": "api::service.service",
       "inversedBy": "techStacks"
-    },
-    "caseStudies": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::case-study.case-study",
-      "inversedBy": "media"
     }
   }
 }

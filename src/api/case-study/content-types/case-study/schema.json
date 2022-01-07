@@ -4,7 +4,8 @@
   "info": {
     "singularName": "case-study",
     "pluralName": "case-studies",
-    "displayName": "caseStudy"
+    "displayName": "caseStudy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,16 +19,30 @@
       "type": "text"
     },
     "technology": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::media.media",
-      "inversedBy": "caseStudies"
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "section_data": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::media.media",
-      "inversedBy": "caseStudies"
+      "relation": "manyToOne",
+      "target": "api::section-data.section-data",
+      "inversedBy": "case_studies"
     }
   }
 }
