@@ -33,9 +33,7 @@
       "type": "string"
     },
     "resume": {
-      "allowedTypes": [
-        "files"
-      ],
+      "allowedTypes": ["files"],
       "type": "media",
       "multiple": false
     },

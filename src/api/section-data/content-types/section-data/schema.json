@@ -73,19 +73,37 @@
       "required": true
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "case_studies": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::case-study.case-study",
       "mappedBy": "section_data"
+    },
+    "sequence": {
+      "type": "integer",
+      "required": false
+    },
+    "webComponent": {
+      "type": "enumeration",
+      "enum": [
+        "PageBanner",
+        "Contacttext",
+        "GridSection",
+        "Teams",
+        "OurPartners",
+        "WhyRootLogic",
+        "CaseStudies",
+        "ContactUsCTA"
+      ]
     }
   }
 }
