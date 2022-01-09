@@ -102,7 +102,22 @@
         "OurPartners",
         "WhyRootLogic",
         "CaseStudies",
-        "ContactUsCTA"
+        "ContactUsCTA",
+        "HeroSection",
+        "CustomerList",
+        "Solutions",
+        "TestimonialsSection",
+        "TwoColumnGrid",
+        "RootsterDNA",
+        "HiringProcess",
+        "ContactUs",
+        "CurrentOpenings",
+        "ContactInfo",
+        "ServicesInfo",
+        "ServicesImage",
+        "ServicesDetails",
+        "ServicesPoints",
+        "TechUsed"
       ]
     }
   }
