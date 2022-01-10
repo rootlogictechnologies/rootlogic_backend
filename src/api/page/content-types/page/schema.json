@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sectionDatas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::section-data.section-data",
+      "inversedBy": "pages"
+    }
+  }
+}

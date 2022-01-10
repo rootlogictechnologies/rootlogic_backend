@@ -4,7 +4,8 @@
   "info": {
     "singularName": "solution",
     "pluralName": "solutionss",
-    "displayName": "solution"
+    "displayName": "solution",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,12 +14,6 @@
   "attributes": {
     "description": {
       "type": "text"
-    },
-    "media": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::media.media",
-      "mappedBy": "solutions"
     },
     "section_data": {
       "type": "relation",
@@ -31,6 +26,15 @@
       "relation": "oneToOne",
       "target": "api::meta-data.meta-data",
       "inversedBy": "solution_data"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

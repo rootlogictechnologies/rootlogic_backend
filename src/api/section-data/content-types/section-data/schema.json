@@ -61,16 +61,15 @@
       "relation": "oneToMany",
       "target": "api::client.client"
     },
-    "page": {
-      "type": "enumeration",
-      "enum": ["HomePage", "AboutUs", "Services", "Careers", "Contact"],
-      "required": true
-    },
     "media": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "case_studies": {
       "type": "relation",
@@ -109,6 +108,12 @@
         "ServicesPoints",
         "TechUsed"
       ]
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::page.page",
+      "inversedBy": "sectionDatas"
     }
   }
 }

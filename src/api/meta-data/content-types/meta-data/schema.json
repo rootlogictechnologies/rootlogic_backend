@@ -27,7 +27,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::solution.solution",
-      "inversedBy": "meta_data"
+      "mappedBy": "meta_data"
     },
     "media": {
       "type": "relation",

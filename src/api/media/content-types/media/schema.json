@@ -20,12 +20,6 @@
     },
     "imageUrl": {
       "type": "string"
-    },
-    "solutions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::solution.solution",
-      "inversedBy": "media"
     }
   }
 }

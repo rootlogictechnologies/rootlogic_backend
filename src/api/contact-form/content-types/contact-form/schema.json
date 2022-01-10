@@ -24,8 +24,8 @@
     "phoneNo": {
       "type": "string"
     },
-    "startDateEstimate": {
-      "type": "datetime"
+    "start": {
+      "type": "string"
     },
     "projectDescription": {
       "type": "text"
