@@ -19,7 +19,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::section-data.section-data",
-      "inversedBy": "pages"
+      "mappedBy": "pages"
     }
   }
 }
