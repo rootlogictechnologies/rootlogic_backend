@@ -33,7 +33,9 @@
         "Drives",
         "Values",
         "DNA",
-        "WhyUs"
+        "WhyUs",
+        "Process",
+        "Contact"
       ],
       "required": true,
       "default": "Drives"
