@@ -26,12 +26,6 @@
       "relation": "manyToMany",
       "target": "api::solution.solution",
       "inversedBy": "media"
-    },
-    "services": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::service.service",
-      "inversedBy": "techStacks"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_components",
+  "info": {
+    "singularName": "web-component",
+    "pluralName": "web-components",
+    "displayName": "webComponent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    }
+  }
+}
