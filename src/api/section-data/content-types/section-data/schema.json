@@ -63,24 +63,14 @@
     },
     "page": {
       "type": "enumeration",
-      "enum": [
-        "HomePage",
-        "AboutUs",
-        "Services",
-        "Careers",
-        "Contact"
-      ],
+      "enum": ["HomePage", "AboutUs", "Services", "Careers", "Contact"],
       "required": true
     },
     "media": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "case_studies": {
       "type": "relation",
@@ -103,16 +93,21 @@
         "WhyRootLogic",
         "CaseStudies",
         "ContactUsCTA",
+        "HeroSection",
+        "CustomerList",
+        "Solutions",
+        "TestimonialsSection",
         "TwoColumnGrid",
         "RootsterDNA",
         "HiringProcess",
         "ContactUs",
         "CurrentOpenings",
-        "ContactText",
-        "ContactForm",
-        "WorldMap",
         "ContactInfo",
-        "ServicesInfo"
+        "ServicesInfo",
+        "ServicesImage",
+        "ServicesDetails",
+        "ServicesPoints",
+        "TechUsed"
       ]
     }
   }
