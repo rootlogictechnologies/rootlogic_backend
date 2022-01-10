@@ -43,6 +43,15 @@
         "files",
         "videos"
       ]
+    },
+    "icons": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

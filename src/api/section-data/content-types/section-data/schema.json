@@ -114,6 +114,18 @@
       "relation": "manyToMany",
       "target": "api::page.page",
       "inversedBy": "sectionDatas"
+    },
+    "destination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section-data.section-data",
+      "inversedBy": "source"
+    },
+    "source": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-data.section-data",
+      "mappedBy": "destination"
     }
   }
 }
