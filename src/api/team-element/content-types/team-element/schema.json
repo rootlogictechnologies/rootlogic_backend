@@ -49,6 +49,9 @@
         "files",
         "videos"
       ]
+    },
+    "priority": {
+      "type": "biginteger"
     }
   }
 }
